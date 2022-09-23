@@ -2,10 +2,13 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
 }
 
 Section {
   position: relative;
+
   height: 100vh;
   width: 100%;
   h1 {
