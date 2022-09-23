@@ -1,21 +1,69 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin-top: 300px;
-  font-family: "Montserrat", sans-serif;
-  background-color: #333;
-  font-size: 36px;
-  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  margin-bottom: 100px;
-  text-align: center;
+Section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+Section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
 }
 
-[class*=col] {
-  border: 2px solid lime;
-  height: 50px;
+.section1 {
+  background-color: rgb(160, 120, 120);
+}
+
+.section2 {
+  background-color: rgb(145, 176, 146);
+}
+
+.section3 {
+  background-color: rgb(149, 148, 185);
+}
+
+.section4 {
+  background-color: rgb(208, 170, 213);
+}
+
+aside {
+  position: fixed;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120px;
+  min-height: 150px;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  list-style: none;
+}
+aside ul li {
+  padding: 5px;
+  text-transform: uppercase;
+  border-bottom: 1px dotted darkgray;
+  background-color: whitesmoke;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+aside ul li:hover {
+  background-color: rgb(208, 206, 206);
 }/*# sourceMappingURL=style.css.map */

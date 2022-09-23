@@ -1,1 +1,62 @@
 @use "./reset";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+Section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+.section1 {
+  background-color: rgb(160, 120, 120);
+}
+.section2 {
+  background-color: rgb(145, 176, 146);
+}
+.section3 {
+  background-color: rgb(149, 148, 185);
+}
+.section4 {
+  background-color: rgb(208, 170, 213);
+}
+
+aside {
+  position: fixed;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 120px;
+    min-height: 150px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    list-style: none;
+    li {
+      padding: 5px;
+      text-transform: uppercase;
+      border-bottom: 1px dotted darkgray;
+      background-color: whitesmoke;
+      font-weight: 600;
+      font-size: 12px;
+      cursor: pointer;
+      transition: 0.7s;
+      &:hover {
+        background-color: rgb(208, 206, 206);
+      }
+    }
+  }
+}
