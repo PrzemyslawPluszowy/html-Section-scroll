@@ -68,4 +68,8 @@ aside ul li {
 }
 aside ul li:hover {
   background-color: rgb(208, 206, 206);
+}
+
+li.active {
+  background-color: rgb(208, 206, 206);
 }/*# sourceMappingURL=style.css.map */
